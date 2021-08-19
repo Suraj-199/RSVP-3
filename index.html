@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RSVP FORM</title>
+
+    <link rel="stylesheet" href="fonts.css">
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex, follow">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-image">
+                    <img class="booking-img" src="./bg.jpg" alt="Booking Image">
+                </div>
+                <div class="booking-form">
+                    <form id="booking-form">
+                        <h2 id="heading">KINDLY BLESS THE NEWLY MARRIED COUPLE</h2>
+                        <div class="form-group form-input">
+                            <input type="text" name="name" id="name" value="" required />
+                            <label for="name" class="form-label">Your name</label>
+                        </div>
+                        <div class="form-group form-input">
+                            <input type="number" name="phone" id="phone" value="" required />
+                            <label for="phone" class="form-label">Your phone number</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select name="time" id="time" required>
+                                    <option value="">Time</option>
+                                    <option value="6pm">6:00 PM</option>
+                                    <option value="7pm">7:00 PM</option>
+                                    <option value="7pm">8:00 PM</option>
+                                    <option value="7pm">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select name="food" id="food" required>
+                                    <option value="">Food</option>
+                                    <option value="seasonalfish">VEG</option>
+                                    <option value="assortedmushrooms">NON_VEG</option>
+                                    <option value="assortedmushrooms">ANY</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-radio">
+                            <label class="label-radio"> Please Do Come With Your Family</label>
+                            <div class="radio-item-list">
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="2" id="number_people_2" />
+                                    <label for="number_people_2">2</label>
+                                </span>
+                                <span class="radio-item active">
+                                    <input type="radio" name="number_people" value="4" id="number_people_4"
+                                        checked="checked" />
+                                    <label for="number_people_4">4</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="6" id="number_people_6" />
+                                    <label for="number_people_6">6</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="8" id="number_people_8" />
+                                    <label for="number_people_8">8</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="10" id="number_people_10" />
+                                    <label for="number_people_10">10</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Confirm" class="submit" id="submit" name="submit" />
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./jquery.min.js"></script>
+    <script src="main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"rayId":"67e3f24d0d5031e1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.8.0","si":10}'></script>
+</body>
+
+</html>
